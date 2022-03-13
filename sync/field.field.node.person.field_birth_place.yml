@@ -1,0 +1,19 @@
+uuid: bf9e28b8-7bd5-44fa-a28b-d29bbe4a3157
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_birth_place
+    - node.type.person
+id: node.person.field_birth_place
+field_name: field_birth_place
+entity_type: node
+bundle: person
+label: 'Birth place'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

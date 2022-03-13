@@ -1,0 +1,31 @@
+uuid: 25567d4d-8cf1-44bf-a27d-4aeeade65bd7
+langcode: en
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - gen
+_core:
+  default_config_hash: CyX_aDKAka2_eihevNLscCHDYrzDgIqwWzFVEFRKIww
+id: gen_primary_local_tasks
+theme: gen
+region: tasks
+weight: -2
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: 'Primary tabs'
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      administrator: administrator

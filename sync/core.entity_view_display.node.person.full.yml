@@ -1,0 +1,123 @@
+uuid: a9fa32d0-677f-488d-bad9-de176fa9239d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.full
+    - field.field.node.person.body
+    - field.field.node.person.field_academy_affiliation
+    - field.field.node.person.field_birth_place
+    - field.field.node.person.field_birth_year
+    - field.field.node.person.field_name
+    - field.field.node.person.field_url_academy
+    - field.field.node.person.field_url_artist
+    - node.type.person
+  module:
+    - datetime
+    - field_group
+    - link
+    - name
+    - text
+    - user
+third_party_settings:
+  field_group:
+    group_about:
+      children:
+        - field_name
+        - field_url_academy
+        - field_birth_year
+        - field_birth_place
+        - body
+        - field_url_artist
+      label: 'About the artist'
+      parent_name: ''
+      region: content
+      weight: 1
+      format_type: html_element
+      format_settings:
+        classes: 'field-group about-artist'
+        show_empty_fields: false
+        id: about-artist
+        element: section
+        show_label: true
+        label_element: h3
+        label_element_classes: field-group-label
+        attributes: ''
+        effect: none
+        speed: fast
+id: node.person.full
+targetEntityType: node
+bundle: person
+mode: full
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_birth_place:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_birth_year:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: html_year
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_name:
+    type: name_default
+    label: hidden
+    settings:
+      format: default
+      markup: none
+      list_format: ''
+      link_target: ''
+      preferred_field_reference: ''
+      preferred_field_reference_separator: ', '
+      alternative_field_reference: ''
+      alternative_field_reference_separator: ', '
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  field_url_academy:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: nofollow
+      target: _blank
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_url_artist:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: nofollow
+      target: _blank
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  field_academy_affiliation: true
+  langcode: true

@@ -1,0 +1,29 @@
+uuid: ee5e1407-898d-4b9e-816f-0fc9480d4228
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_artist_ref
+    - node.type.artwork
+    - node.type.person
+id: node.artwork.field_artist_ref
+field_name: field_artist_ref
+entity_type: node
+bundle: artwork
+label: Artist
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:node'
+  handler_settings:
+    target_bundles:
+      person: person
+    sort:
+      field: field_name.family
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

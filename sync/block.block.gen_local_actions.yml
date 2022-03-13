@@ -1,0 +1,20 @@
+uuid: d45e888f-5b2a-44bd-b6cf-640f0669927d
+langcode: en
+status: true
+dependencies:
+  theme:
+    - gen
+_core:
+  default_config_hash: ik4PTMlBD0MWansnSMpSXq5SUlWRJ1IVVt6C7AIbQmc
+id: gen_local_actions
+theme: gen
+region: tasks
+weight: -4
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  label_display: '0'
+  provider: core
+visibility: {  }

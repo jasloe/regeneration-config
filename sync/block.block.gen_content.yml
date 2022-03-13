@@ -1,0 +1,22 @@
+uuid: 3af2e40c-313b-4514-a704-8f77b3da1dcb
+langcode: en
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - gen
+_core:
+  default_config_hash: 80N66GdzEvwqi1m-_GZ-ulkk8AJG9beoXcZ4-pMVKjI
+id: gen_content
+theme: gen
+region: content
+weight: -3
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  label_display: '0'
+  provider: system
+visibility: {  }

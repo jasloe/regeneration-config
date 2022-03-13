@@ -1,0 +1,33 @@
+uuid: 455f7cd8-8681-437f-b533-53a94501369d
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.media.image
+    - field.field.media.artwork.field_caption
+    - field.field.media.artwork.field_media_image
+    - image.style.wide
+    - media.type.artwork
+  module:
+    - image
+id: media.artwork.image
+targetEntityType: media
+bundle: artwork
+mode: image
+content:
+  field_media_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: wide
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  field_caption: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

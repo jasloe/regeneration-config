@@ -1,0 +1,41 @@
+uuid: 07eee963-894e-48d0-96c2-ac2303796357
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.image
+    - field.field.node.artwork.body
+    - field.field.node.artwork.field_additional_title
+    - field.field.node.artwork.field_artist_ref
+    - field.field.node.artwork.field_artwork_ref
+    - field.field.node.artwork.field_dims_cm
+    - field.field.node.artwork.field_dims_in
+    - field.field.node.artwork.field_medium
+    - field.field.node.artwork.field_year
+    - node.type.artwork
+  module:
+    - user
+id: node.artwork.image
+targetEntityType: node
+bundle: artwork
+mode: image
+content:
+  field_artwork_ref:
+    type: entity_reference_entity_view
+    label: hidden
+    settings:
+      view_mode: default
+      link: true
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  body: true
+  field_additional_title: true
+  field_artist_ref: true
+  field_dims_cm: true
+  field_dims_in: true
+  field_medium: true
+  field_year: true
+  langcode: true
+  links: true

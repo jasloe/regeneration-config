@@ -1,0 +1,43 @@
+uuid: 660fe429-d0be-4686-802f-01dc0c50441b
+langcode: en
+status: false
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.person.body
+    - field.field.node.person.field_academy_affiliation
+    - field.field.node.person.field_birth_place
+    - field.field.node.person.field_birth_year
+    - field.field.node.person.field_name
+    - field.field.node.person.field_url_academy
+    - field.field.node.person.field_url_artist
+    - node.type.person
+  module:
+    - text
+    - user
+id: node.person.teaser
+targetEntityType: node
+bundle: person
+mode: teaser
+content:
+  body:
+    type: text_summary_or_trimmed
+    label: hidden
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_academy_affiliation: true
+  field_birth_place: true
+  field_birth_year: true
+  field_name: true
+  field_url_academy: true
+  field_url_artist: true
+  langcode: true

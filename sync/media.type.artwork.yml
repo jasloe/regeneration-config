@@ -1,0 +1,14 @@
+uuid: 1084eb00-39a2-408d-b5d3-7eac6e4c8604
+langcode: en
+status: true
+dependencies: {  }
+id: artwork
+label: Artwork
+description: ''
+source: image
+queue_thumbnail_downloads: false
+new_revision: false
+source_configuration:
+  source_field: field_media_image
+field_map:
+  name: name

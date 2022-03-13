@@ -1,0 +1,23 @@
+uuid: c8213cdb-f409-4100-baee-82b74d27e85c
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.artwork
+  module:
+    - text
+id: node.artwork.body
+field_name: body
+entity_type: node
+bundle: artwork
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+  required_summary: false
+field_type: text_with_summary

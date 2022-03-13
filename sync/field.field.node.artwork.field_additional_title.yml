@@ -1,0 +1,21 @@
+uuid: 29a3a2f9-f16a-4d13-84f4-1e399b2c36de
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_additional_title
+    - node.type.artwork
+  module:
+    - text
+id: node.artwork.field_additional_title
+field_name: field_additional_title
+entity_type: node
+bundle: artwork
+label: 'Additional title'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text

@@ -1,0 +1,29 @@
+uuid: 0eb21b4f-ebe9-47f2-81d6-44d3007ddcc3
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_artwork_ref
+    - media.type.artwork
+    - node.type.artwork
+id: node.artwork.field_artwork_ref
+field_name: field_artwork_ref
+entity_type: node
+bundle: artwork
+label: Media
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:media'
+  handler_settings:
+    target_bundles:
+      artwork: artwork
+    sort:
+      field: name
+      direction: ASC
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

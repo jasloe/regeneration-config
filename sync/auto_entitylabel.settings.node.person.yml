@@ -1,0 +1,9 @@
+status: 2
+pattern: "[node:field_name:given] [node:field_name:family]\t"
+escape: true
+preserve_titles: false
+dependencies:
+  config:
+    - node.type.person
+save: 0
+chunk: '50'

@@ -1,0 +1,21 @@
+uuid: dad1f0a3-288f-47f4-b76f-eddee1833345
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_academy_affiliation
+field_name: field_academy_affiliation
+entity_type: node
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,103 @@
+uuid: dc66ca30-c846-41c1-9dbc-76d7cb11c268
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.about
+    - field.field.node.person.body
+    - field.field.node.person.field_academy_affiliation
+    - field.field.node.person.field_birth_place
+    - field.field.node.person.field_birth_year
+    - field.field.node.person.field_name
+    - field.field.node.person.field_url_academy
+    - field.field.node.person.field_url_artist
+    - node.type.person
+  module:
+    - datetime
+    - link
+    - name
+    - text
+    - user
+id: node.person.about
+targetEntityType: node
+bundle: person
+mode: about
+content:
+  body:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  field_academy_affiliation:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  field_birth_place:
+    type: string
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  field_birth_year:
+    type: datetime_default
+    label: hidden
+    settings:
+      timezone_override: ''
+      format_type: html_year
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  field_name:
+    type: name_default
+    label: hidden
+    settings:
+      format: default
+      markup: none
+      list_format: ''
+      link_target: ''
+      preferred_field_reference: ''
+      preferred_field_reference_separator: ', '
+      alternative_field_reference: ''
+      alternative_field_reference_separator: ', '
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_url_academy:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: nofollow
+      target: _blank
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  field_url_artist:
+    type: link
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: nofollow
+      target: _blank
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  langcode: true

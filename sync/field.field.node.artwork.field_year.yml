@@ -1,0 +1,21 @@
+uuid: d27c78fc-33bf-454c-b7df-b312886962af
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_year
+    - node.type.artwork
+  module:
+    - datetime_range
+id: node.artwork.field_year
+field_name: field_year
+entity_type: node
+bundle: artwork
+label: 'Year '
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: daterange

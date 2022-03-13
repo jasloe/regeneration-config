@@ -1,0 +1,33 @@
+uuid: 0702cf52-a6c5-4441-8d0f-bf06c9d47227
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: artista
+label: Artista
+type: 'canonical_entities:node'
+pattern: 'artisti/[node:title]'
+selection_criteria:
+  a7577276-4e2e-4ce8-bd39-4d4e539020b9:
+    id: node_type
+    negate: false
+    uuid: a7577276-4e2e-4ce8-bd39-4d4e539020b9
+    context_mapping:
+      node: node
+    bundles:
+      person: person
+  d4f8f3e9-8f20-4056-8a40-cffd521c8d1d:
+    id: language
+    negate: false
+    uuid: d4f8f3e9-8f20-4056-8a40-cffd521c8d1d
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      it: it
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

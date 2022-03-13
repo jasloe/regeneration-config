@@ -1,0 +1,39 @@
+uuid: 2c15c965-c10e-4790-b49c-0ec50a3e0dc7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.media.artwork.field_caption
+    - field.field.media.artwork.field_media_image
+    - image.style.large
+    - media.type.artwork
+  module:
+    - image
+    - text
+id: media.artwork.default
+targetEntityType: media
+bundle: artwork
+mode: default
+content:
+  field_caption:
+    type: text_default
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  field_media_image:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: large
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  created: true
+  langcode: true
+  name: true
+  thumbnail: true
+  uid: true

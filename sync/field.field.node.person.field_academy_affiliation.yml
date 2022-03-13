@@ -1,0 +1,19 @@
+uuid: 9b9dc688-1513-437e-970b-b3a19fc630d7
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_academy_affiliation
+    - node.type.person
+id: node.person.field_academy_affiliation
+field_name: field_academy_affiliation
+entity_type: node
+bundle: person
+label: 'Academy affiliation'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

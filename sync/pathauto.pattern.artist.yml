@@ -1,0 +1,33 @@
+uuid: 019e7f19-4c65-4954-b09f-0fed3a06f8f8
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: artist
+label: Artist
+type: 'canonical_entities:node'
+pattern: 'artists/[node:title]'
+selection_criteria:
+  13dec216-f58d-453d-bd74-44214cfea131:
+    id: node_type
+    negate: false
+    uuid: 13dec216-f58d-453d-bd74-44214cfea131
+    context_mapping:
+      node: node
+    bundles:
+      person: person
+  37726e1e-99df-4391-8ced-5d0ddf6eff76:
+    id: language
+    negate: false
+    uuid: 37726e1e-99df-4391-8ced-5d0ddf6eff76
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

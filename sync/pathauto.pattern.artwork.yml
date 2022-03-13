@@ -1,0 +1,33 @@
+uuid: 400c37d4-21d2-49d0-b429-ee236ea4c173
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: artwork
+label: Artwork
+type: 'canonical_entities:node'
+pattern: 'artwork/[node:title]'
+selection_criteria:
+  f455ef8a-d1af-4b52-a6b8-fbc796f8d236:
+    id: node_type
+    negate: false
+    uuid: f455ef8a-d1af-4b52-a6b8-fbc796f8d236
+    context_mapping:
+      node: node
+    bundles:
+      artwork: artwork
+  9243ca8a-8b55-4900-8d2d-a709a41601a4:
+    id: language
+    negate: false
+    uuid: 9243ca8a-8b55-4900-8d2d-a709a41601a4
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      en: en
+selection_logic: and
+weight: -5
+relationships:
+  'node:langcode:language':
+    label: Language
