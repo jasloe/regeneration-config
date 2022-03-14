@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - filter.format.basic_html
+    - filter.format.mailchimp_campaign
   module:
     - filter
     - media
@@ -19,4 +20,5 @@ permissions:
   - 'access content'
   - 'access shortcuts'
   - 'use text format basic_html'
+  - 'use text format mailchimp_campaign'
   - 'view media'

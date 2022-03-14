@@ -1,0 +1,33 @@
+uuid: 7ea7eaac-e218-4808-91d5-922812dfbf55
+langcode: en
+status: true
+dependencies:
+  module:
+    - language
+    - node
+id: opera_d_arte
+label: 'Opera d''arte'
+type: 'canonical_entities:node'
+pattern: 'opera-d-arte/[node:title]'
+selection_criteria:
+  ef15b20d-cfe4-49ef-aefb-ab6dfda6c73e:
+    id: node_type
+    negate: false
+    uuid: ef15b20d-cfe4-49ef-aefb-ab6dfda6c73e
+    context_mapping:
+      node: node
+    bundles:
+      artwork: artwork
+  001939d2-aa16-4538-a31f-8bcb767a6b7e:
+    id: language
+    negate: false
+    uuid: 001939d2-aa16-4538-a31f-8bcb767a6b7e
+    context_mapping:
+      language: 'node:langcode:language'
+    langcodes:
+      it: it
+selection_logic: and
+weight: -10
+relationships:
+  'node:langcode:language':
+    label: Language

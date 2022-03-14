@@ -4,17 +4,6 @@ display:
   default:
     display_title: Predefinito
     display_options:
-      pager:
-        options:
-          tags:
-            next: 'Seguente ›'
-            previous: '‹ Precedente'
-            first: '« Prima'
-            last: 'Ultima »'
-          expose:
-            items_per_page_label: 'Voci per pagina'
-            items_per_page_options_all_label: '- Tutto -'
-            offset_label: Scostamento
       exposed_form:
         options:
           submit_button: Applica
@@ -22,10 +11,5 @@ display:
           exposed_sorts_label: 'Ordina per'
           sort_asc_label: Asc
           sort_desc_label: Disc
-      empty:
-        title:
-          title: 'Benvenuti in [site:name]'
   feed_1:
     display_title: Feed
-  page_1:
-    display_title: Pagina

@@ -1,1 +1,52 @@
 blocks: {  }
+menus:
+  -
+    menu_name: secondary-menu
+    title: Artists
+    parent: null
+    uri: 'internal:/artists'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-50'
+    langcode: en
+    uuid: 01320942-00e1-4a25-adcf-f8bbd58d29b8
+  -
+    menu_name: main
+    title: Regeneration
+    parent: null
+    uri: 'internal:/'
+    link_title: ''
+    description: Regeneration
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: en
+    uuid: 70fbef2a-97cf-42c6-9dea-4151467e0763
+  -
+    menu_name: secondary-menu
+    title: 'About the exhibition'
+    parent: null
+    uri: 'internal:/about'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: en
+    uuid: aa3ea24c-24d6-4dff-9b73-bae544a353c4
+  -
+    menu_name: secondary-menu
+    title: Essays
+    parent: null
+    uri: 'internal:/essays'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-48'
+    langcode: en
+    uuid: a2a3d1a3-70a6-4695-8ce8-7bda2c0a3f03
+taxonomies:
+  tags: {  }

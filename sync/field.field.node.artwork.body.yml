@@ -11,7 +11,7 @@ id: node.artwork.body
 field_name: body
 entity_type: node
 bundle: artwork
-label: Body
+label: 'Artwork description'
 description: ''
 required: false
 translatable: true
