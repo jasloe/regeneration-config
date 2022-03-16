@@ -30,11 +30,11 @@ popup_hide_button_message: Hide
 popup_link: 'https://www.iubenda.com/privacy-policy/482469'
 popup_link_new_window: true
 popup_height: null
-popup_width: 100%
+popup_width: ''
 popup_delay: 0
 show_more_info: false
-popup_bg_hex: 0779bf
-popup_text_hex: ffffff
+popup_bg_hex: ''
+popup_text_hex: ''
 domain: ''
 domains_option: 1
 domains_list: ''
@@ -44,7 +44,7 @@ cookie_session: 0
 set_cookie_session_zero_on_disagree: 0
 cookie_lifetime: 100
 use_mobile_message: false
-use_bare_css: false
+use_bare_css: true
 disagree_do_not_show_popup: false
 reload_page: false
 reload_options: 0
@@ -58,8 +58,8 @@ automatic_cookies_removal: true
 allowed_cookies: ''
 consent_storage_method: basic
 withdraw_message:
-  value: '<h2>We use cookies on this site to enhance your user experience</h2><p>You have given your consent for us to set cookies.</p>'
-  format: restricted_html
+  value: "<h2>We use cookies on this site to enhance your user experience</h2>\r\n\r\n<p>You have given your consent for us to set cookies.</p>\r\n"
+  format: basic_html
 withdraw_tab_button_label: 'Privacy settings'
 withdraw_action_button_label: 'Withdraw consent'
 withdraw_enabled: false

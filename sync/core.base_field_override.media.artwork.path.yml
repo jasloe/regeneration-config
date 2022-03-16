@@ -1,0 +1,20 @@
+uuid: 1ae80d71-dc4d-480e-a78e-4b80a594d942
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.artwork
+  module:
+    - path
+id: media.artwork.path
+field_name: path
+entity_type: media
+bundle: artwork
+label: 'URL alias'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: path

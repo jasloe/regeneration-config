@@ -32,20 +32,6 @@ content:
       placeholder: ''
       show_summary: false
     third_party_settings: {  }
-  created:
-    type: datetime_timestamp
-    weight: 11
-    region: content
-    settings: {  }
-    third_party_settings: {  }
-  field_academy_affiliation:
-    type: string_textfield
-    weight: 9
-    region: content
-    settings:
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
   field_birth_place:
     type: string_textfield
     weight: 5
@@ -116,27 +102,13 @@ content:
     third_party_settings: {  }
   path:
     type: path
-    weight: 14
+    weight: 9
     region: content
     settings: {  }
-    third_party_settings: {  }
-  promote:
-    type: boolean_checkbox
-    weight: 12
-    region: content
-    settings:
-      display_label: true
     third_party_settings: {  }
   status:
     type: boolean_checkbox
     weight: 0
-    region: content
-    settings:
-      display_label: true
-    third_party_settings: {  }
-  sticky:
-    type: boolean_checkbox
-    weight: 13
     region: content
     settings:
       display_label: true
@@ -150,19 +122,14 @@ content:
       placeholder: ''
     third_party_settings: {  }
   translation:
-    weight: 15
+    weight: 10
     region: content
     settings: {  }
     third_party_settings: {  }
-  uid:
-    type: entity_reference_autocomplete
-    weight: 10
-    region: content
-    settings:
-      match_operator: CONTAINS
-      match_limit: 10
-      size: 60
-      placeholder: ''
-    third_party_settings: {  }
 hidden:
+  created: true
+  field_academy_affiliation: true
+  promote: true
   revision_log: true
+  sticky: true
+  uid: true

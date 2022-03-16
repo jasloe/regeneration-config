@@ -1,17 +1,17 @@
-uuid: 4b7472d7-f0bb-4420-8e47-020d9bd1ffa3
+uuid: 58f6d0dd-2d33-48e0-993c-87dbbcac4df5
 langcode: en
 status: true
 dependencies:
   config:
-    - node.type.event
-id: node.event.promote
-field_name: promote
+    - node.type.artwork
+id: node.artwork.sticky
+field_name: sticky
 entity_type: node
-bundle: event
-label: 'Promoted to front page'
+bundle: artwork
+label: 'Sticky at top of lists'
 description: ''
 required: false
-translatable: false
+translatable: true
 default_value:
   -
     value: 0

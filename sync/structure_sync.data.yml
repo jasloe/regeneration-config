@@ -1,4 +1,6 @@
 blocks: {  }
+taxonomies:
+  tags: {  }
 menus:
   -
     menu_name: secondary-menu
@@ -48,5 +50,51 @@ menus:
     weight: '-48'
     langcode: en
     uuid: a2a3d1a3-70a6-4695-8ce8-7bda2c0a3f03
-taxonomies:
-  tags: {  }
+  -
+    menu_name: footer
+    title: Artists
+    parent: null
+    uri: 'internal:/artists'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-49'
+    langcode: en
+    uuid: 01e60802-0f6d-4490-9bed-2b9feab220d6
+  -
+    menu_name: footer
+    title: 'About the exhibition'
+    parent: null
+    uri: 'internal:/about'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-50'
+    langcode: en
+    uuid: 6f812efa-a5ba-4705-900e-cf4e054ee861
+  -
+    menu_name: footer
+    title: 'American Academy in Rome'
+    parent: null
+    uri: 'https://www.aarome.org'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '-48'
+    langcode: en
+    uuid: c7bfcca5-a076-409c-9c60-4ce77d8db115
+  -
+    menu_name: footer
+    title: 'Privacy policy'
+    parent: null
+    uri: 'https://www.iubenda.com/privacy-policy/482469/legal'
+    link_title: ''
+    description: null
+    enabled: '1'
+    expanded: '0'
+    weight: '0'
+    langcode: en
+    uuid: e4f2fde5-c2ef-4329-9950-f6be0564a237

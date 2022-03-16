@@ -25,7 +25,7 @@ third_party_settings:
         pathauto: true
         transliterate: true
     redirect: false
-    retroactive_update: false
+    retroactive_update: true
     active_updating: false
   content_translation:
     translation_sync:
@@ -38,7 +38,7 @@ entity_type: media
 bundle: artwork
 label: Image
 description: ''
-required: true
+required: false
 translatable: true
 default_value: {  }
 default_value_callback: ''

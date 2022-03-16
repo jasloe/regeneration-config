@@ -1,20 +1,20 @@
-uuid: 4b7472d7-f0bb-4420-8e47-020d9bd1ffa3
+uuid: 7cd1472d-a717-409a-bd2c-84afe5b1222d
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.event
-id: node.event.promote
-field_name: promote
+id: node.event.status
+field_name: status
 entity_type: node
 bundle: event
-label: 'Promoted to front page'
+label: Published
 description: ''
 required: false
 translatable: false
 default_value:
   -
-    value: 0
+    value: 1
 default_value_callback: ''
 settings:
   on_label: 'On'

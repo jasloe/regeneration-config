@@ -45,7 +45,7 @@ content:
     region: content
   field_artwork_ref:
     type: entity_reference_entity_view
-    label: above
+    label: hidden
     settings:
       view_mode: default
       link: false

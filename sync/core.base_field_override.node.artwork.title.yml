@@ -1,0 +1,18 @@
+uuid: 40a7c82b-82db-44de-a6df-7e9f3c34a618
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.artwork
+id: node.artwork.title
+field_name: title
+entity_type: node
+bundle: artwork
+label: Title
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

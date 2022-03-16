@@ -1,0 +1,18 @@
+uuid: 5ab689cb-edc2-417c-858a-ea58dfb4a562
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.artwork
+id: node.artwork.changed
+field_name: changed
+entity_type: node
+bundle: artwork
+label: Changed
+description: 'The time that the node was last edited.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: changed

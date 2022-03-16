@@ -1,0 +1,20 @@
+uuid: 2f6102a1-cb89-408f-913c-d17d94632759
+langcode: en
+status: true
+dependencies:
+  config:
+    - media.type.artwork
+id: media.artwork.name
+field_name: name
+entity_type: media
+bundle: artwork
+label: Name
+description: ''
+required: true
+translatable: true
+default_value:
+  -
+    value: ''
+default_value_callback: ''
+settings: {  }
+field_type: string

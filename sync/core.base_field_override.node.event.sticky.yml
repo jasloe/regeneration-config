@@ -1,14 +1,14 @@
-uuid: 4b7472d7-f0bb-4420-8e47-020d9bd1ffa3
+uuid: a83b9608-89b1-426c-bb14-3ba3648ddcf2
 langcode: en
 status: true
 dependencies:
   config:
     - node.type.event
-id: node.event.promote
-field_name: promote
+id: node.event.sticky
+field_name: sticky
 entity_type: node
 bundle: event
-label: 'Promoted to front page'
+label: 'Sticky at top of lists'
 description: ''
 required: false
 translatable: false

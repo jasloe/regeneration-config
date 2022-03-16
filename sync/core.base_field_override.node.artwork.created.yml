@@ -1,0 +1,18 @@
+uuid: 38ef0070-9289-4401-8ee7-1e99428499aa
+langcode: en
+status: true
+dependencies:
+  config:
+    - node.type.artwork
+id: node.artwork.created
+field_name: created
+entity_type: node
+bundle: artwork
+label: 'Authored on'
+description: 'The time that the node was created.'
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: created
